@@ -48,6 +48,9 @@
         },
         "footer": {
           "component": "vtex.dreamstore-footer/index"
+        },
+        "footer/wishlist": {
+          "component": "vtex.wishlist/index"
         }
       }
     },
