@@ -2,7 +2,8 @@
   "store.home": {
     "blocks": [
       "carousel#home",
-      "shelf#home"
+      "shelf#home",
+      "newsletter"
     ]
   },
   "store.product": {
