@@ -2,7 +2,8 @@
   "store.home": {
     "blocks": [
       "carousel#home",
-      "shelf#home"
+      "shelf#home",
+      "vtex.future-menu@0.x:menu"
     ]
   },
   "store.product": {
@@ -60,6 +61,21 @@
       "telemarketing",
       "category-menu"
     ]
+  },
+  "vtex.future-menu@0.x:menu": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-2",
+          "type": "collection",
+          "iconId": null,
+          "highlight": false,
+          "hasSubmenu": false,
+          "submenuWidth": "100%",
+          "params": { "collectionId": "collection-1" }
+        }
+      ]
+    }
   },
   "menu-link": {
     "props": {
