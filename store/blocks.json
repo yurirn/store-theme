@@ -1,9 +1,9 @@
 {
   "store.home": {
     "blocks": [
+      "vtex.future-menu@0.x:menu",
       "carousel#home",
-      "shelf#home",
-      "vtex.future-menu@0.x:menu"
+      "shelf#home"
     ]
   },
   "store.product": {
