@@ -1,7 +1,6 @@
 {
   "store.home": {
     "blocks": [
-      "vtex.future-menu@0.x:menu",
       "carousel#home",
       "shelf#home"
     ]
@@ -59,7 +58,7 @@
       "search-bar",
       "menu-link",
       "telemarketing",
-      "category-menu"
+      "vtex.future-menu@0.x:menu"
     ]
   },
   "vtex.future-menu@0.x:menu": {
