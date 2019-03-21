@@ -58,10 +58,10 @@
       "search-bar",
       "menu-link",
       "telemarketing",
-      "vtex.future-menu@0.x:menu"
+      "vtex.menu@2.x:menu"
     ]
   },
-  "vtex.future-menu@0.x:menu": {
+  "vtex.menu@2.x:menu": {
     "children": [
       "menu-item#hats",
       "menu-item#custom1",
@@ -97,15 +97,15 @@
       }
     },
     "blocks": [
-      "vtex.future-menu@0.x:submenu#custom1"
+      "vtex.menu@2.x:submenu#custom1"
     ]
   },
-  "vtex.future-menu@0.x:submenu#custom1": {
+  "vtex.menu@2.x:submenu#custom1": {
     "props": {
       "width": "auto"
     },
     "children": [
-      "vtex.future-menu@0.x:second-level-menu#horizontal"
+      "vtex.menu@2.x:second-level-menu#horizontal"
     ]
   },
   "menu-item#decoration": {
@@ -156,30 +156,30 @@
       }
     },
     "blocks": [
-      "vtex.future-menu@0.x:submenu#bateria"
+      "vtex.menu@2.x:submenu#bateria"
     ]
   },
-  "vtex.future-menu@0.x:submenu#bateria": {
+  "vtex.menu@2.x:submenu#bateria": {
     "props": {
       "width": "100%"
     },
     "children": [
-      "vtex.future-menu@0.x:col#bateriaCol1",
-      "vtex.future-menu@0.x:col#bateriaCol2"
+      "vtex.menu@2.x:col#bateriaCol1",
+      "vtex.menu@2.x:col#bateriaCol2"
     ]
   },
-  "vtex.future-menu@0.x:col#bateriaCol1": {
+  "vtex.menu@2.x:col#bateriaCol1": {
     "children": [
-      "vtex.future-menu@0.x:second-level-menu#foo",
-      "vtex.future-menu@0.x:second-level-menu#bar"
+      "vtex.menu@2.x:second-level-menu#foo",
+      "vtex.menu@2.x:second-level-menu#bar"
     ]
   },
-  "vtex.future-menu@0.x:col#bateriaCol2": {
+  "vtex.menu@2.x:col#bateriaCol2": {
     "children": [
-      "vtex.future-menu@0.x:second-level-menu#bar"
+      "vtex.menu@2.x:second-level-menu#bar"
     ]
   },
-  "vtex.future-menu@0.x:second-level-menu#horizontal": {
+  "vtex.menu@2.x:second-level-menu#horizontal": {
     "props": {
       "orientation": "vertical"
     },
@@ -188,7 +188,7 @@
       "second-level-menu-item#custom"
     ]
   },
-  "vtex.future-menu@0.x:second-level-menu#foo": {
+  "vtex.menu@2.x:second-level-menu#foo": {
     "props": {
       "orientation": "vertical"
     },
@@ -197,7 +197,7 @@
       "second-level-menu-item#custom"
     ]
   },
-  "vtex.future-menu@0.x:second-level-menu#bar": {
+  "vtex.menu@2.x:second-level-menu#bar": {
     "props": {
       "orientation": "vertical"
     },
