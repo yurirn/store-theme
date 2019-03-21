@@ -63,18 +63,174 @@
     ]
   },
   "vtex.future-menu@0.x:menu": {
+    "children": [
+      "menu-item#hats",
+      "menu-item#custom1",
+      "menu-item#decoration",
+      "menu-item#necessaire",
+      "menu-item#custom2",
+      "menu-item#bateria"
+    ]
+  },
+  "menu-item#hats": {
     "props": {
-      "items": [
-        {
-          "id": "menu-item-2",
-          "type": "collection",
-          "iconId": null,
-          "highlight": false,
-          "hasSubmenu": false,
-          "submenuWidth": "100%",
-          "params": { "collectionId": "collection-1" }
-        }
-      ]
+      "id": "menu-item-1",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "menu-item#custom1": {
+    "props": {
+      "id": "menu-item-custom-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "in-et-quasi",
+        "noFollow": false,
+        "tagTitle": "et dolorem dolore",
+        "text": "facere cumque delectus"
+      }
+    },
+    "blocks": [
+      "vtex.future-menu@0.x:submenu#custom1"
+    ]
+  },
+  "vtex.future-menu@0.x:submenu#custom1": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.future-menu@0.x:second-level-menu#horizontal"
+    ]
+  },
+  "menu-item#decoration": {
+    "props": {
+      "id": "menu-item-2",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 2
+      }
+    }
+  },
+  "menu-item#necessaire": {
+    "props": {
+      "id": "menu-item-12",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 12
+      }
+    }
+  },
+  "menu-item#custom2": {
+    "props": {
+      "id": "menu-item-custom-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://www.google.com",
+        "noFollow": true,
+        "tagTitle": "Search Google",
+        "text": "Google"
+      }
+    }
+  },
+  "menu-item#bateria": {
+    "props": {
+      "id": "menu-item-36",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 36
+      }
+    },
+    "blocks": [
+      "vtex.future-menu@0.x:submenu#bateria"
+    ]
+  },
+  "vtex.future-menu@0.x:submenu#bateria": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.future-menu@0.x:col#bateriaCol1",
+      "vtex.future-menu@0.x:col#bateriaCol2"
+    ]
+  },
+  "vtex.future-menu@0.x:col#bateriaCol1": {
+    "children": [
+      "vtex.future-menu@0.x:second-level-menu#foo",
+      "vtex.future-menu@0.x:second-level-menu#bar"
+    ]
+  },
+  "vtex.future-menu@0.x:col#bateriaCol2": {
+    "children": [
+      "vtex.future-menu@0.x:second-level-menu#bar"
+    ]
+  },
+  "vtex.future-menu@0.x:second-level-menu#horizontal": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "second-level-menu-item#hats",
+      "second-level-menu-item#custom"
+    ]
+  },
+  "vtex.future-menu@0.x:second-level-menu#foo": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "second-level-menu-item#hats",
+      "second-level-menu-item#custom"
+    ]
+  },
+  "vtex.future-menu@0.x:second-level-menu#bar": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "second-level-menu-item#custom",
+      "second-level-menu-item#custom"
+    ]
+  },
+  "second-level-menu-item#hats": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "second-level-menu-item#custom": {
+    "props": {
+      "id": "menu-item-custom-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://www.google.com",
+        "noFollow": true,
+        "tagTitle": "Search Google",
+        "text": "Google"
+      }
     }
   },
   "menu-link": {
