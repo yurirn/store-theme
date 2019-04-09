@@ -2,33 +2,7 @@
     "store.home": {
       "children": [
         "carousel#home",
-        "shelf#home",
-        "flex-row#home"
-      ]
-    },
-    "flex-row#home": {
-      "children": [
-        "info-card#home",
-        "flex-col#home2"
-      ]
-    },
-    "flex-col#home1": {
-      "children": [
-        "info-card#home"
-      ]
-    },
-    "flex-col#home2": {
-      "children": [
-        "flex-row#home3",
-        "info-card#home",
-        "info-card#home"
-      ]
-    },
-    "flex-row#home3": {
-      "children": [
-        "info-card#home",
-        "info-card#home",
-        "info-card#home"
+        "shelf#home"
       ]
     },
     "info-card#home": {
@@ -85,26 +59,16 @@
     "header": {
       "blocks": [
         "unstable--header-layout.desktop",
-        "unstable--header-layout.mobile",
-        "unstable--header-layout.desktop-scroll"
+        "unstable--header-layout.mobile"
       ]
     },
     "header.full": {
       "blocks": [
         "unstable--header-layout.desktop",
-        "unstable--header-layout.mobile",
-        "unstable--header-layout.desktop-scroll"
+        "unstable--header-layout.mobile"
       ]
     },
     "unstable--header-layout.desktop": {
-      "children": [
-        "unstable--header-row#1-desktop",
-        "unstable--header-row#2-desktop",
-        "unstable--header-row#3-desktop",
-        "unstable--header-border"
-      ]
-    },
-    "unstable--header-layout.desktop-scroll": {
       "children": [
         "unstable--header-row#1-desktop",
         "unstable--header-row#2-desktop",
@@ -133,11 +97,6 @@
         "minicart"
       ]
     },
-    "unstable--drawer": {
-      "children": [
-        "vtex.menu@2.x:unstable--menu#drawer"
-      ]
-    },
     "login": {
       "props": {
         "iconLabel": "Login"
@@ -156,19 +115,6 @@
       ],
       "props": {
         "sticky": true
-      }
-    },
-    "vtex.menu@2.x:unstable--menu#drawer": {
-      "children": [
-        "unstable--menu-item#custom1",
-        "unstable--menu-item#hats",
-        "unstable--menu-item#decoration",
-        "unstable--menu-item#necessaire",
-        "unstable--menu-item#custom2",
-        "unstable--menu-item#bateria"
-      ],
-      "props": {
-        "orientation": "vertical"
       }
     },
     "vtex.menu@2.x:unstable--menu": {
