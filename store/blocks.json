@@ -1,44 +1,76 @@
 {
     "store.home": {
-      "blocks": [
+      "children": [
         "carousel#home",
-        "shelf#home"
+        "shelf#home",
+        "flex-row#home"
       ]
     },
+    "flex-row#home": {
+      "children": [
+        "info-card#home",
+        "flex-col#home2"
+      ]
+    },
+    "flex-col#home1": {
+      "children": [
+        "info-card#home"
+      ]
+    },
+    "flex-col#home2": {
+      "children": [
+        "flex-row#home3",
+        "info-card#home",
+        "info-card#home"
+      ]
+    },
+    "flex-row#home3": {
+      "children": [
+        "info-card#home",
+        "info-card#home",
+        "info-card#home"
+      ]
+    },
+    "info-card#home": {
+      "props": {
+        "headline": "Opa",
+        "subhead": "Tudo bem?"
+      }
+    },
     "store.product": {
-      "blocks": [
+      "children": [
         "product-details#default",
         "product-kit",
         "shelf.relatedProducts"
       ]
     },
     "store.search": {
-      "blocks": [
+      "children": [
         "search-result"
       ]
     },
     "store.search#brand": {
-      "blocks": [
+      "children": [
         "search-result"
       ]
     },
     "store.search#department": {
-      "blocks": [
+      "children": [
         "search-result#department"
       ]
     },
     "store.search#category": {
-      "blocks": [
+      "children": [
         "search-result"
       ]
     },
     "store.search#subcategory": {
-      "blocks": [
+      "children": [
         "search-result"
       ]
     },
     "store.account": {
-      "blocks": [
+      "children": [
         "my-account"
       ],
       "parent": {
@@ -46,23 +78,33 @@
       }
     },
     "store.login": {
-      "blocks": [
+      "children": [
         "login-content#default"
       ]
     },
     "header": {
       "blocks": [
         "unstable--header-layout.desktop",
-        "unstable--header-layout.mobile"
+        "unstable--header-layout.mobile",
+        "unstable--header-layout.desktop-scroll"
       ]
     },
     "header.full": {
       "blocks": [
         "unstable--header-layout.desktop",
-        "unstable--header-layout.mobile"
+        "unstable--header-layout.mobile",
+        "unstable--header-layout.desktop-scroll"
       ]
     },
     "unstable--header-layout.desktop": {
+      "children": [
+        "unstable--header-row#1-desktop",
+        "unstable--header-row#2-desktop",
+        "unstable--header-row#3-desktop",
+        "unstable--header-border"
+      ]
+    },
+    "unstable--header-layout.desktop-scroll": {
       "children": [
         "unstable--header-row#1-desktop",
         "unstable--header-row#2-desktop",
@@ -87,10 +129,13 @@
       "children": [
         "logo",
         "_",
-        "search-bar",
-        "_",
         "login",
         "minicart"
+      ]
+    },
+    "unstable--drawer": {
+      "children": [
+        "vtex.menu@2.x:unstable--menu#drawer"
       ]
     },
     "login": {
@@ -106,11 +151,24 @@
     "unstable--header-row#3-desktop": {
       "children": [
         "_",
-        "vtex.menu@2.x:unstable--menu",
+        "unstable--menu",
         "_"
       ],
       "props": {
         "sticky": true
+      }
+    },
+    "vtex.menu@2.x:unstable--menu#drawer": {
+      "children": [
+        "unstable--menu-item#custom1",
+        "unstable--menu-item#hats",
+        "unstable--menu-item#decoration",
+        "unstable--menu-item#necessaire",
+        "unstable--menu-item#custom2",
+        "unstable--menu-item#bateria"
+      ],
+      "props": {
+        "orientation": "vertical"
       }
     },
     "vtex.menu@2.x:unstable--menu": {
@@ -157,7 +215,7 @@
         "width": "auto"
       },
       "children": [
-        "vtex.menu@2.x:unstable--second-level-menu#horizontal"
+        "vtex.menu@2.x:unstable--menu#horizontal"
       ]
     },
     "unstable--menu-item#decoration": {
@@ -222,43 +280,43 @@
     },
     "vtex.menu@2.x:unstable--col#bateriaCol1": {
       "children": [
-        "vtex.menu@2.x:unstable--second-level-menu#foo",
-        "vtex.menu@2.x:unstable--second-level-menu#bar"
+        "vtex.menu@2.x:unstable--menu#foo",
+        "vtex.menu@2.x:unstable--menu#bar"
       ]
     },
     "vtex.menu@2.x:unstable--col#bateriaCol2": {
       "children": [
-        "vtex.menu@2.x:unstable--second-level-menu#bar"
+        "vtex.menu@2.x:unstable--menu#bar"
       ]
     },
-    "vtex.menu@2.x:unstable--second-level-menu#horizontal": {
+    "vtex.menu@2.x:unstable--menu#horizontal": {
       "props": {
         "orientation": "vertical"
       },
       "children": [
-        "unstable--second-level-menu-item#hats",
-        "unstable--second-level-menu-item#custom"
+        "unstable--menu-item#hats",
+        "unstable--menu-item#custom"
       ]
     },
-    "vtex.menu@2.x:unstable--second-level-menu#foo": {
+    "vtex.menu@2.x:unstable--menu#foo": {
       "props": {
         "orientation": "vertical"
       },
       "children": [
-        "unstable--second-level-menu-item#hats",
-        "unstable--second-level-menu-item#custom"
+        "unstable--menu-item#hats2",
+        "unstable--menu-item#custom"
       ]
     },
-    "vtex.menu@2.x:unstable--second-level-menu#bar": {
+    "vtex.menu@2.x:unstable--menu#bar": {
       "props": {
         "orientation": "vertical"
       },
       "children": [
-        "unstable--second-level-menu-item#custom",
-        "unstable--second-level-menu-item#custom"
+        "unstable--menu-item#custom",
+        "unstable--menu-item#custom"
       ]
     },
-    "unstable--second-level-menu-item#hats": {
+    "unstable--menu-item#hats2": {
       "props": {
         "id": "unstable--menu-item-1",
         "type": "category",
@@ -269,7 +327,7 @@
         }
       }
     },
-    "unstable--second-level-menu-item#custom": {
+    "unstable--menu-item#custom": {
       "props": {
         "id": "unstable--menu-item-custom-2",
         "type": "custom",
