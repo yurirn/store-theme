@@ -136,19 +136,6 @@
     }
   },
 
-  "responsive-layout.desktop#testing": {
-    "children": ["rich-text#desktop", "flex-layout.row#about-us"]
-  },
-  "responsive-layout.tablet#testing": {
-    "children": ["rich-text#tablet", "flex-layout.row#about-us"]
-  },
-  "responsive-layout.phone#testing": {
-    "children": ["rich-text#phone", "flex-layout.row#about-us2"]
-  },
-  "responsive-layout.mobile#testing": {
-    "children": ["flex-layout.row#about-us2"]
-  },
-
   "flex-layout.row#about-us": {
     "children": ["image#mobile-phone", "flex-layout.col#text-about-us"]
   },
