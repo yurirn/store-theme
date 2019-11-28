@@ -40,7 +40,7 @@
       "product-summary-space",
       "product-summary-price",
       "product-identifier.summary",
-      "product-summary-buy-button"
+      "modal-trigger#preview-shelf"
     ]
   },
 
@@ -50,7 +50,32 @@
       "product-summary-specification-badges"
     ]
   },
-
+  "flex-layout.col#preview-image": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "flex-layout.row#preview-row": {
+    "children": [
+      "flex-layout.col#preview-image",
+      "flex-layout.col#preview-right-col"
+    ]
+  },
+  "modal-trigger#preview-shelf": {
+    "children": [
+      "modal-layout#preview-shelf",
+      "product-summary-buy-button"
+    ]
+  },
+  "modal-layout#preview-shelf": {
+    "props": {
+      "title": "This is the title of the product preview",
+      "blockClass": "klynger"
+    },
+    "children": [
+      "flex-layout.row#preview-row"
+    ]
+  },
   "product-summary-specification-badges": {
     "props": {
       "specificationGroupName": "Group",
