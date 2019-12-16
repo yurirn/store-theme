@@ -7,7 +7,8 @@
       "flex-layout.row#deals",
       "shelf#home",
       "info-card#home",
-      "rich-text#question",
+      "modal-trigger#text-information",
+      "modal-trigger#text-information-content-scroll",
       "rich-text#link",
       "newsletter"
     ]
@@ -84,14 +85,94 @@
       "textAlignment": "center"
     }
   },
-
+  "modal-trigger#text-information": {
+    "children": [
+      "rich-text#question",
+      "modal-layout#text-information"
+    ]
+  },
+  "modal-layout#text-information": {
+    "props": {
+      "title": "Modal scroll body",
+      "scroll": "body",
+      "fullScreen": {
+        "mobile": true,
+        "desktop": false
+      }
+    },
+    "children": [
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content"
+    ]
+  },
+  "modal-trigger#text-information-content-scroll": {
+    "children": [
+      "rich-text#question-2",
+      "modal-layout#text-information-content-scroll"
+    ]
+  },
+  "modal-layout#text-information-content-scroll": {
+    "props": {
+      "title": "Modal scroll content",
+      "scroll": "content",
+      "showContentDividers": true,
+      "fullScreen": {
+        "mobile": true,
+        "desktop": false
+      }
+    },
+    "children": [
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content",
+      "rich-text#modal-content"
+    ]
+  },
   "rich-text#question": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+      "text": "Click here to open a modal with scroll body",
       "blockClass": "question"
     }
   },
-
+  "rich-text#question-2": {
+    "props": {
+      "text": "Click here to open a modal with scroll content",
+      "blockClass": "question"
+    }
+  },
+  "rich-text#modal-content": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
+  },
   "rich-text#link": {
     "props": {
       "text": "\n**Reach us at**\nwww.vtex.com.br",

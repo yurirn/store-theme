@@ -70,7 +70,11 @@
   "modal-layout#preview-shelf": {
     "props": {
       "title": "This is the title of the product preview",
-      "blockClass": "klynger"
+      "blockClass": "klynger",
+      "fullScreen": {
+        "mobile": true,
+        "desktop": false
+      }
     },
     "children": [
       "flex-layout.row#preview-row"
