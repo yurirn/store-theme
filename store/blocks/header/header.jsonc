@@ -112,7 +112,11 @@
     "children": ["minicart-base-content"]
   },
   "minicart-base-content": {
-    "blocks": ["minicart-product-list", "minicart-summary"]
+    "blocks": [
+      "minicart-product-list",
+      "minicart-summary",
+      "minicart-empty-state"
+    ]
   },
   "minicart-product-list": {
     "blocks": ["product-list"]
