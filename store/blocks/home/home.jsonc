@@ -5,13 +5,13 @@
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
+      "shelf#home",
+      // "rich-text#shelf-title",
+      // "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
-      "newsletter",
-      "shelf#home"
+      "newsletter"
     ]
   },
 
@@ -52,22 +52,22 @@
     }
   },
 
-  "rich-text#shelf-title": {
-    "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
-    }
-  },
-  "flex-layout.row#shelf": {
-    "children": ["product-list-block#demo1"]
-  },
-  "product-list-block#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
+  // "rich-text#shelf-title": {
+  //   "props": {
+  //     "text": "## Summer",
+  //     "blockClass": "shelfTitle"
+  //   }
+  // },
+  // "flex-layout.row#shelf": {
+  //   "children": ["product-list-block#demo1"]
+  // },
+  // "product-list-block#demo1": {
+  //   "blocks": ["product-summary.shelf"],
+  //   "children": ["slider-layout#demo-products"],
+  //   "props": {
+  //     "orderBy": "OrderByTopSaleDESC"
+  //   }
+  // },
 
   "slider-layout#demo-products": {
     "props": {
@@ -77,28 +77,6 @@
         "phone": 1
       },
       "infinite": true
-    }
-  },
-
-  "product-summary#home": {
-    "props": {
-      "isOneClickBuy": false,
-      "showBadge": true,
-      "badgeText": "OFF",
-      "buyButtonText": "Add to cart",
-      "displayBuyButton": "displayButtonAlways",
-      "showCollections": false,
-      "showListPrice": true,
-      "labelSellingPrice": "To",
-      "labelListPrice": "From",
-      "showLabels": true,
-      "showInstallments": true,
-      "showSavings": true,
-      "name": {
-        "showBrandName": true,
-        "showSku": true,
-        "showProductReference": true
-      }
     }
   },
 
