@@ -217,6 +217,30 @@
   },
 
   "gallery": {
-    "blocks": ["product-summary.shelf"]
+    "blocks": ["product-summary.shelf#search"]
+  },
+
+  "product-summary.shelf#search": {
+    "children": [
+      "product-summary-add-to-list-button",
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-sku-selector",
+      "product-summary-price",
+      "add-to-cart-button"
+    ]
+  },
+
+  "product-summary-sku-selector": {
+    "props": {
+      "blockClass": "defaultSKUSelector",
+      "displayMode": "slider",
+      "sliderItemsPerPage": {
+        "desktop": 5,
+        "mobile": 2
+      }
+    }
   }
 }

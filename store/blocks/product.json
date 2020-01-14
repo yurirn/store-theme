@@ -75,7 +75,7 @@
       "product-price#product-details",
       "product-separator",
       "product-identifier.product",
-      "sku-selector",
+      "sku-selector#product-page",
       "product-quantity",
       "product-assembly-options",
       "flex-layout.row#buy-button",
@@ -85,10 +85,15 @@
     ]
   },
 
-  "sku-selector": {
+  "sku-selector#product-page": {
     "props": {
       "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
+      "showValueNameForImageVariation": true,
+      "displayMode": "slider",
+      "sliderItemsPerPage": {
+        "desktop": 5,
+        "mobile": 2
+      }
     }
   },
 
