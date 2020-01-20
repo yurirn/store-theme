@@ -5,9 +5,9 @@
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
-      "shelf#home",
-      // "rich-text#shelf-title",
-      // "flex-layout.row#shelf",
+      // "shelf#home",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
@@ -52,21 +52,33 @@
     }
   },
 
-  // "rich-text#shelf-title": {
-  //   "props": {
-  //     "text": "## Summer",
-  //     "blockClass": "shelfTitle"
-  //   }
-  // },
-  // "flex-layout.row#shelf": {
-  //   "children": ["product-list-block#demo1"]
-  // },
-  // "product-list-block#demo1": {
-  //   "blocks": ["product-summary.shelf"],
-  //   "children": ["slider-layout#demo-products"],
-  //   "props": {
-  //     "orderBy": "OrderByTopSaleDESC"
-  //   }
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["product-list-block#demo1"]
+  },
+  "product-list-block#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  // "product-summary.shelf#shelf": {
+  //   "children": [
+  //     "product-summary-add-to-list-button",
+  //     "stack-layout#prodsum",
+  //     "product-summary-name",
+  //     "product-rating-inline",
+  //     "product-summary-space",
+  //     "product-summary-price",
+  //     "add-to-cart-button"
+  //   ]
   // },
 
   "slider-layout#demo-products": {

@@ -8,25 +8,25 @@
   "header-layout.desktop": {
     "children": [
       "header-row#1-desktop",
-      "header-row#2-desktop",
+      // "header-row#2-desktop",
       "header-row#3-desktop",
       "header-row#4-desktop"
     ]
   },
 
   "header-row#1-desktop": {
-    "children": ["telemarketing"],
+    "children": ["shelf#home"],
     "props": {
       "fullWidth": true
     }
   },
 
-  "header-row#2-desktop": {
-    "children": ["notification.bar#home"],
-    "props": {
-      "fullWidth": "true"
-    }
-  },
+  // "header-row#2-desktop": {
+  //   "children": ["flex-layout.row#deals"],
+  //   "props": {
+  //     "fullWidth": "true"
+  //   }
+  // },
   "notification.bar#home": {
     "props": {
       "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
