@@ -1,6 +1,6 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE"
@@ -9,19 +9,18 @@
   },
 
   "store.search#brand": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result"],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 10,
         "skusFilter": "FIRST_AVAILABLE"
       }
     }
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE"
@@ -33,13 +32,15 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "skusFilter": "FIRST_AVAILABLE"
+        "skusFilter": "FIRST_AVAILABLE",
+        "facetsBehavior": "Dynamic",
+        "maxItemsPerPage": 4
       }
     }
   },
 
   "store.search#subcategory": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result"],
     "props": {
       "context": {
         "skusFilter": "FIRST_AVAILABLE"
@@ -218,5 +219,35 @@
 
   "gallery": {
     "blocks": ["product-summary.shelf"]
+  },
+
+  "search-result": {
+    "blocks": [
+      // It's recommended to use the filter-navigator.v2 instead of the v1 (i.e. just `filter-navigator`)
+      "filter-navigator.v2",
+      "gallery",
+      "not-found",
+      "breadcrumb",
+      "order-by",
+      "total-products"
+    ],
+    "props": {
+      "hiddenFacets": {
+        "layoutMode1": "normal",
+        "layoutMode2": "small",
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "__editorItemTitle": "editor.search-result.hiddenFacets.specificationFilters.hiddenFilter"
+            }
+          ]
+        }
+      },
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
   }
 }

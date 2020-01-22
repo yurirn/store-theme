@@ -63,7 +63,10 @@
   },
   "product-images": {
     "props": {
-      "displayThumbnailsArrows": true
+      "displayThumbnailsArrows": true,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "thumbnailAspectRatio": "2:1"
     }
   },
   "flex-layout.col#right-col": {
@@ -73,6 +76,7 @@
     },
     "children": [
       "product-name",
+      "product-brand",
       "product-rating-summary",
       "product-price#product-details",
       "product-separator",
@@ -90,6 +94,11 @@
   "sku-selector": {
     "props": {
       "variationsSpacing": 3
+    }
+  },
+  "product-brand": {
+    "props": {
+      "displayMode": "logo"
     }
   },
 
