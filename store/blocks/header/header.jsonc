@@ -21,12 +21,6 @@
     }
   },
 
-  // "header-row#2-desktop": {
-  //   "children": ["flex-layout.row#deals"],
-  //   "props": {
-  //     "fullWidth": "true"
-  //   }
-  // },
   "notification.bar#home": {
     "props": {
       "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
@@ -52,7 +46,7 @@
       "search-bar",
       "locale-switcher",
       "login",
-      "vtex.minicart:minicart.v2"
+      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -77,7 +71,7 @@
       "logo#mobile",
       "header-spacer",
       "login",
-      "vtex.minicart:minicart.v2"
+      "minicart.v2"
     ],
     "props": {
       "sticky": true,
@@ -106,31 +100,32 @@
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
       "width": "70"
     }
+  },
+
+  "minicart.v2": {
+    "children": ["minicart-base-content"]
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-product-list", "minicart-summary"],
+    "children": ["flex-layout.row#deals"]
+  },
+  "minicart-product-list": {
+    "blocks": ["product-list"]
+  },
+  "minicart-summary": {
+    "blocks": ["checkout-summary.compact"]
+  },
+
+  "checkout-summary.compact": {
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "totalizersToShow": ["Items", "Discounts"]
+    }
+  },
+  "summary-totalizers#minicart": {
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": false
+    }
   }
-
-  // "minicart.v2": {
-  //   "children": ["minicart-base-content"]
-  // },
-  // "minicart-base-content": {
-  //   "blocks": ["minicart-product-list", "minicart-summary"]
-  // },
-  // "minicart-product-list": {
-  //   "blocks": ["product-list"]
-  // },
-  // "minicart-summary": {
-  //   "blocks": ["checkout-summary.compact"]
-  // },
-
-  // "checkout-summary.compact": {
-  //   "children": ["summary-totalizers#minicart"],
-  //   "props": {
-  //     "totalizersToShow": ["Items", "Discounts"]
-  //   }
-  // },
-  // "summary-totalizers#minicart": {
-  //   "props": {
-  //     "showTotal": true,
-  //     "showDeliveryTotal": false
-  //   }
-  // }
 }
