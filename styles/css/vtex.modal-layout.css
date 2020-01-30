@@ -1,0 +1,12 @@
+.paper--quickview {
+  width: 40rem;
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
+.triggerContainer--quickview {
+  background-color: #e3e4e6;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

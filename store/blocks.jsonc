@@ -41,13 +41,96 @@
       "add-to-cart-button"
     ]
   },
-
+  "modal-trigger#quickview": {
+    "children": [
+      "modal-layout#quickview",
+      "rich-text#quickview"
+    ],
+    "props": {
+      "blockClass": "quickview"
+    }
+  },
+  "rich-text#quickview": {
+    "props": {
+      "text": "Quickview",
+      "blockClass": "quickview"
+    }
+  },
+  "modal-layout#quickview": {
+    "props": {
+      "blockClass": "quickview",
+      "fullScreen": {
+        "phone": true,
+        "desktop": false,
+        "tablet": false
+      }
+    },
+    "children": [
+      "flex-layout.row#quickview-main-row"
+    ]
+  },
+  "flex-layout.row#quickview-main-row": {
+    "children": [
+      "flex-layout.col#quickview-product-images",
+      "flex-layout.col#quickview-product-information"
+    ],
+    "props": {
+      "colGap": 4
+    }
+  },
+  "flex-layout.col#quickview-product-images": {
+    "children": [
+      "product-images"
+    ],
+    "props": {
+      "rowGap": 0,
+      "width": "calc(50% - 0.375rem)"
+    }
+  },
+  "flex-layout.col#quickview-product-information": {
+    "children": [
+      "vtex.store-components:product-name",
+      "product-rating-summary",
+      "product-price#quickview-price",
+      "product-separator",
+      "product-identifier.product",
+      "product-summary-sku-selector#quickview",
+      "link.product#quickview"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "width": "calc(50% - 0.375rem)"
+    }
+  },
+  "product-price#quickview-price": {
+    "props": {
+      "showInstallments": true,
+      "showSavings": true
+    }
+  },
+  "link.product#quickview": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "Mais detalhes >",
+      "blockClass": "quickview"
+    }
+  },
+  "product-summary-sku-selector#quickview": {
+    "props": {
+      "blockClass": "quickview"
+    }
+  },
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image",
       "product-bookmark",
-      "product-summary-specification-badges"
-    ]
+      "product-summary-specification-badges",
+      "modal-trigger#quickview"
+    ],
+    "props": {
+      "blockClass": "shelf-summary"
+    }
   },
 
   "product-summary-specification-badges": {

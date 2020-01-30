@@ -1,0 +1,7 @@
+.container--quickview {
+  padding: 0.5rem;
+}
+
+.container--quickview .link {
+  color: #134cd8;
+}

@@ -57,6 +57,12 @@
   font-weight: 700;
 }
 
+.container--quickview .paragraph {
+  text-decoration: underline;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;

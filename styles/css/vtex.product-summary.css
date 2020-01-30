@@ -1,0 +1,11 @@
+.SKUSelectorContainer--quickview {
+  margin: 0
+}
+
+.SKUSelectorContainer--quickview :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
+  margin: 0;
+}
+
+.SKUSelectorContainer--quickview :global(.vtex-store-components-3-x-skuSelectorContainer) {
+  margin-bottom: 0;
+}
