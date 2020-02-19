@@ -48,7 +48,9 @@
     "vtex.add-to-cart-button": "0.x",
     "vtex.product-bookmark-interfaces": "1.x",
     "vtex.slider-layout": "0.x",
-    "vtex.store-image": "0.x"
+    "vtex.store-image": "0.x",
+    "vtex.product-gifts": "0.x",
+    "vtex.modal-layout": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
